@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Science UMontreal</title>
+    <link>https://openscience.ca/en/</link>
+    <description>Recent content on Open Science UMontreal</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://openscience.ca/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home</title>
+      <link>https://openscience.ca/en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openscience.ca/en/</guid>
+      <description>index In English</description>
+    </item>
+    
+  </channel>
+</rss>

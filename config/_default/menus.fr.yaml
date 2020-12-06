@@ -1,0 +1,12 @@
+main:
+  - name: "À Propos"
+    url: "/a-propos"
+  - name: "Équipe"
+    url:  "/equipe"
+social:
+  - name: "Facebook"
+    url:  "#"
+  - name: "Twitter"
+    url:  "#"
+  - name: "Mastodon"
+    url:  "#"

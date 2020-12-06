@@ -21,21 +21,19 @@
   {{ end }}
 </head>
 <body>
+  {{ partial "nav/main.html" . }}
 
   {{ block "main" . }}
 
   {{ end }}
 
-  <!-- Move footer to its own partial file too -->
-  <script src="js/jquery.slim.min.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  {{ partial "footer/footer.html" . }}
+  {{ partial "footer/scripts.html" . }}
+
 </body>
 </html>
 <!--
-  Copyright Danny Colin, Open Science UMontreal (c) 2019
+  Copyright Danny Colin, Open Science UMontreal (c) 2020
 
   This file is part of Open Science UMontreal.
 

@@ -1,0 +1,31 @@
+<div class="top-bar" style="max-width: 1200px; margin: 0 auto;">
+  <div class="top-bar-left">
+    <img src="/img/osum-logo-text.svg"
+         alt="Open Science UMontreal"
+         width="250">
+  </div>
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+        <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+      {{ range .Translations }}
+      <li>
+        <a href="{{ .Permalink }}">{{ upper .Lang }}</a>
+      </li>
+      {{ end }}
+      {{ range .Site.Menus.social }}
+      <li>
+        <img src="/img/icons/{{ lower .Name }}.svg"
+             alt=""
+             width="32"
+             style="padding: 4px;">
+        <a href="{{ .URL }}" style="display: none">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

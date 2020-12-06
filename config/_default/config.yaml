@@ -1,0 +1,26 @@
+title: Open Science UMontreal
+baseURL: https://openscience.ca/
+relativeURLs: true
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    contentDir: "content/en"
+    languageName: "English"
+    permalinks:
+      blog: "/blog/:year/:month/:day/:slug"
+  fr:
+    contentDir: "content/fr"
+    languageName: "Français"
+    permalinks:
+      blog: "/blogue/:year/:month/:day/:slug"
+
+menu:
+  social:
+    - name: "Facebook"
+      url:  "#"
+    - name: "Twitter"
+      url:  "#"
+    - name: "Mastodon"
+      url:  "#"
