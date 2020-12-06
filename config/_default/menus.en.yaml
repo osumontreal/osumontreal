@@ -1,8 +1,12 @@
 main:
+  - name: "Home"
+    url: "/"
   - name: "About"
     url: "/about"
   - name: "Team"
     url:  "/team"
+  - name: "Blog"
+    url:  "/blog"
 social:
   - name: "Facebook"
     url:  "#"

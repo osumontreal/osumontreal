@@ -1,8 +1,12 @@
 main:
+  - name: "Accueil"
+    url:  "/"
   - name: "À Propos"
     url: "/a-propos"
   - name: "Équipe"
     url:  "/equipe"
+  - name: "Blogue"
+    url:  "/blogue"
 social:
   - name: "Facebook"
     url:  "#"
