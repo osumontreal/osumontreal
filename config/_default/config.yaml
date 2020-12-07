@@ -2,7 +2,7 @@ title: Open Science UMontreal
 baseURL: https://openscience.ca/
 relativeURLs: true
 
-defaultContentLanguage: en
+defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 languages:
   en:
