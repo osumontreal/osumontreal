@@ -2,7 +2,8 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="cell auto">
-        <h1>Blogue</h1>
+        <h1 class="h3">Blogue</h1>
+        <!-- Display only if there's a subtitle text -->
         <p>Lorem ipsum dolor sit amet</p>
       </div>
     </div>
@@ -15,7 +16,12 @@
                  width="780"
                  height="350">
             <div class="card-section">
-              <h4>{{ .Title }}</h4>
+              <h4>
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h4>
+              <p>Published on [date] by [auteur]</p>
             </div>
           </div>
         </div>
@@ -28,7 +34,12 @@
                  width="390"
                  height="250">
             <div class="card-section">
-              <h4>{{ .Title }}</h4>
+              <h4>
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h4>
+              <p>Published on [date] by [auteur]</p>
             </div>
           </div>
         </div>
