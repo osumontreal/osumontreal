@@ -62,11 +62,32 @@
   If you don't know what you're doing then don't touch the following lines :)
 */
 
-.post-card a { color: black }
+// Regular links
+a {
+  text-decoration: underline;
+}
+
+// Card links
+.post-card a {
+  color: black;
+  text-decoration: none;
+}
 .post-card:hover {
   a {
     color: black;
     text-decoration: underline;
   }
 }
+
+.top-bar {
+  a {
+    color: black;
+    font-weight: 600;
+
+    &:hover {
+      color: #006bb6;
+    }
+  }
+}
+
 
