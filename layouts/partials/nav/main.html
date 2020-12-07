@@ -1,10 +1,22 @@
 <div class="top-bar" style="max-width: 1200px; margin: 0 auto;">
   <div class="top-bar-left">
-    <a href="{{ "/" | relLangURL }}">
-      <img src="/img/osum.svg" alt="Open Science UMontreal">
-    </a>
+    <ul class="menu">
+      <li>
+        <a href="{{ "/" | relLangURL }}">
+          <img src="/img/osum.svg" alt="Open Science UMontreal">
+        </a>
+      </li>
+      <li class="hide-for-medium">
+        <button type="button"
+                class="hollow button"
+                data-toggle="offCanvas"
+                style="margin-top: 25px;">
+          Menu
+        </button>
+      </li>
+    </ul>
   </div>
-  <div class="top-bar-right">
+  <div class="top-bar-right show-for-medium">
     <ul class="dropdown menu" data-dropdown-menu>
       {{ $currentPage := . }}
       {{ range .Site.Menus.main.ByWeight }}
@@ -31,6 +43,12 @@
         </a>
       </li>
       {{ end }}
+    </ul>
+  </div>
+  <div class="top-bar-right hide-for-medium">
+    <ul class="menu">
+      <li>
+      </li>
     </ul>
   </div>
 </div>
