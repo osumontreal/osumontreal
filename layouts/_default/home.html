@@ -4,12 +4,16 @@
       {{ range first 3 (where .Site.RegularPages "Type" "blog") }}
         <div class="cell small-12 medium-4">
           <div class="card">
-            <img src="assets/img/generic/rectangle-1.jpg"
+            <img src="#"
                  alt=""
                  width="390"
                  height="250">
             <div class="card-section">
-              <h4>{{ .Title }}</h4>
+              <h2 class="h4">
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h2>
             </div>
           </div>
         </div>
@@ -24,12 +28,16 @@
       {{ range first 4 (after 3 (where .Site.RegularPages "Type" "blog")) }}
         <div class="cell small-12 medium-3">
           <div class="card">
-            <img src="assets/img/generic/rectangle-1.jpg"
+            <img src="#"
                  alt=""
                  width="390"
                  height="250">
             <div class="card-section">
-              <h4>{{ .Title }}</h4>
+              <h2 class="h4">
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h2>
             </div>
           </div>
         </div>
