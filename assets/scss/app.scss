@@ -1,6 +1,12 @@
 @import "foundation/foundation";
 @import "foundation/settings";
 
+// Move this to settings
+$button-palette: map-merge($foundation-palette, (
+    purple: #bb00ff,
+    charcoal: #24242e
+));
+
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
