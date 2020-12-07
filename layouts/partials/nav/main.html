@@ -19,11 +19,16 @@
       {{ end }}
       {{ range .Site.Menus.social }}
       <li>
-        <img src="/img/icons/{{ lower .Name }}.svg"
-             alt=""
-             width="32"
-             style="padding: 4px;">
-        <a href="{{ .URL }}" style="display: none">{{ .Name }}</a>
+        <a href="{{ .URL }}">
+          <img src="/img/icons/{{ lower .Name }}.svg"
+               alt=""
+               width="24"
+               height="24"
+               style="margin-top: -8px;">
+          <span class="show-for-sr">
+            {{ .Name }}
+          </span>
+        </a>
       </li>
       {{ end }}
     </ul>

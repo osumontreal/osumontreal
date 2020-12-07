@@ -13,8 +13,8 @@ main:
     weight: 20
 social:
   - name: "Facebook"
-    url:  "#"
+    url:  "#facebook"
   - name: "Twitter"
-    url:  "#"
+    url:  "#twitter"
   - name: "Mastodon"
-    url:  "#"
+    url:  "#mastodon"
