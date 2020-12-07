@@ -18,3 +18,13 @@ social:
     url:  "#twitter"
   - name: "Mastodon"
     url:  "#mastodon"
+footer:
+  - name: "Colophon"
+    url:  "#"
+    weight: 10
+  - name: "Privacy"
+    url:  "#"
+    weight: 20
+  - name: "Accessibility"
+    url:  "#"
+    weight: 30

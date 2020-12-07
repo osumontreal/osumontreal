@@ -18,3 +18,13 @@ social:
     url:  "#"
   - name: "Mastodon"
     url:  "#"
+footer:
+  - name: "Colophon"
+    url:  "#"
+    weight: 10
+  - name: "Confidentialité"
+    url:  "#"
+    weight: 20
+  - name: "Accessibilité"
+    url:  "#"
+    weight: 30

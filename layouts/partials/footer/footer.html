@@ -13,10 +13,9 @@
           licensed under the <a href="#">CC-BY-SA 4.0</a>
         </p>
         <ul class="menu float-right">
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          {{ range .Site.Menus.footer.ByWeight }}
+          <li><a href="#">{{ .Name }}</a></li>
+          {{ end }}
         </ul>
       </div>
     </div>
