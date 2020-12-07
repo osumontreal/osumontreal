@@ -11,7 +11,7 @@
     <div class="grid-x grid-margin-x">
       {{ range first 2 (where .Site.RegularPages "Type" "blog") }}
         <div class="cell small-12 medium-6">
-          <div class="card">
+          <div class="card post-card">
             <img src="assets/img/generic/rectangle-1.jpg"
                  alt=""
                  width="780"
@@ -22,14 +22,14 @@
                   {{ .Title }}
                 </a>
               </h4>
-              <p>Published on [date] by [auteur]</p>
+              <p style="color: #555">Published on [date] by [auteur]</p>
             </div>
           </div>
         </div>
       {{ end }}
       {{ range after 2 (where .Site.RegularPages "Type" "blog") }}
         <div class="cell small-12 medium-4">
-          <div class="card">
+          <div class="card post-card">
             <img src="assets/img/generic/rectangle-1.jpg"
                  alt=""
                  width="390"
@@ -40,7 +40,7 @@
                   {{ .Title }}
                 </a>
               </h4>
-              <p>Published on [date] by [auteur]</p>
+              <p style="color: #555">Published on [date] by [auteur]</p>
             </div>
           </div>
         </div>
