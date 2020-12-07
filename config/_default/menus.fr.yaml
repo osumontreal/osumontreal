@@ -1,12 +1,16 @@
 main:
   - name: "Accueil"
     url:  "/"
+    weight: 10
   - name: "À Propos"
     url: "/a-propos"
+    weight: 40
   - name: "Équipe"
     url:  "/equipe"
+    weight: 30
   - name: "Blogue"
     url:  "/blogue"
+    weight: 20
 social:
   - name: "Facebook"
     url:  "#"

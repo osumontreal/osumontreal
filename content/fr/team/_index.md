@@ -1,4 +1,4 @@
 ---
-title: "Notre Équipe"
+title: "Découvrez notre équipe"
 url: "/fr/equipe"
 ---
