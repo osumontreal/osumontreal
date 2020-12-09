@@ -97,4 +97,26 @@ a {
   }
 }
 
+// Menu mobile
+.menu-mobile {
+  &:first-child {
+    border-top: solid 1px #eee;
+  }
+  li {
+    border-bottom: solid 1px #eee;
+    padding: 8px 0;
+  }
+}
 
+// Orbit
+.hollow.button.white:hover {
+  background-color: white;
+  border: solid 1px white;
+  color: #006bb6;
+}
+
+.slide-text {
+  padding: 15px;
+  background-color: #006ab5;
+  color: white;
+}

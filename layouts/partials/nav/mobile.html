@@ -1,5 +1,9 @@
+<button class="close-button" aria-label="Close menu" type="button" data-close>
+  <span aria-hidden="true">&times;</span>
+</button>
+
 <h2 class="h4" style="margin: 15px; font-weight: bold;">Menu</h2>
-<ul class="drilldown menu vertical" data-drilldown>
+<ul class="drilldown menu menu-mobile vertical" data-drilldown>
   {{ $currentPage := . }}
   {{ range .Site.Menus.main.ByWeight }}
   <li>
