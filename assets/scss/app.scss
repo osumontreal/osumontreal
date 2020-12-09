@@ -97,4 +97,13 @@ a {
   }
 }
 
-
+// Menu mobile
+.menu-mobile {
+  &:first-child {
+    border-top: solid 1px #eee;
+  }
+  li {
+    border-bottom: solid 1px #eee;
+    padding: 8px 0;
+  }
+}
