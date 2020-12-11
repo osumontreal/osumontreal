@@ -8,12 +8,14 @@ languages:
   en:
     contentDir: "content/en"
     languageName: "English"
+    summaryLength: 4
     permalinks:
       blog: "/blog/:year/:month/:day/:slug"
       authors: "/team/:slug"
   fr:
     contentDir: "content/fr"
     languageName: "Français"
+    summaryLength: "10"
     permalinks:
       blog: "/blogue/:year/:month/:day/:slug"
       authors: "/equipe/:slug"
@@ -49,3 +51,5 @@ taxonomies:
   tag: "tags"
   category: "categories"
   author: "authors"
+
+

@@ -8,12 +8,6 @@ img_alttext: Person looking at the sky during the night
 tags: ["Open Science", "Personal story", "Inspiration"]
 ---
 
-
-<!-- {{< inline-quote "Samuel Burke" "PhD Candidate in Neuroscience" >}}
-I would like to share what drove me to start looking for open science, without knowing that I was looking for it, *per se*.
-{{< /inline-quote >}} -->
-
-
 ## OSUM is contributing to the steady revolution of science, towards open science
 
 As graduate students / trainees, we believe that science is in trouble.  Spending time talking and developing open science resources – rather than doing ‘actual’ science – is a conscious choice and path to try and improve science. We see open science, an umbrella term, as a solution which can address many of the issues in science today.
@@ -24,7 +18,7 @@ I would like to share what drove me to start looking for open science, without k
 
 
 {{< img src="featured.jpg" alt="Person looking at the sky during the night" >}}
-{{< float right "Credit: @grakozy's unsplash" \>}}
+Credit: @grakozy's unsplash"
 
 The following statements are a hodgepodge of personal experiences, and are un-scientific in nature. Yet, I suspect and believe that they are likely symptomatic of an underlying truth, and that they will resonate with many. These thoughts and conclusions draw from both personal experience within academia, and from reading the thoughts of individuals who have lived similar experiences.
 
@@ -46,7 +40,7 @@ This revolves around the idea of what most people — non-scientists and scienti
 This is what it really feels like …
 
 ![](wheels.png)
-{{< float right "Credit: Unknown source – please help" \>}}> 
+"Credit: Unknown source – please help"
 
 A definition I feel is hard to dispute:
 *Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.* ([Wikipedia](https://en.wikipedia.org/wiki/Science))
