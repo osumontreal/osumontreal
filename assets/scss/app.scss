@@ -97,4 +97,15 @@ a {
   }
 }
 
+ul.tag-list {
+  margin: 0
+}
 
+li.tag-list {
+list-style-type: none;
+display: inline;
+border: 1px solid #555;
+padding: .25rem;
+line-height:2rem;
+margin: .25rem
+}
