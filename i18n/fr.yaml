@@ -10,10 +10,37 @@
     tout le monde!
 
 - id: matrix_cta
-  translation: Rejoignez notre plateforme de chat entièrement sécurisée
+  translation: Rejoignez notre plateforme de chat sécurisée
 
 - id: matrix_know_more
-  translation: Know more about out platform
+  translation: En savoir plus sur la plateforme
+
+### NEWSLETTER WIDGET ###
+
+- id: newsletter_title
+  translation: Infolettre mensuelle
+
+- id: newsletter_text
+  translation: |
+    La meilleure façon de suivre nos dernières activités est de vous inscrire 
+    à notre infolettre mensuelle.
+
+- id: newsletter_email
+  translation: Votre adresse de courriel
+
+- id: newsletter_email_placeholder
+  translation: tuesawesome@exemple.com
+
+- id: newsletter_cta
+  translation: M'inscrire
+
+### TEAM SECTION ###
+
+- id: alttext_profile_pic
+  translation: Photo de profil de
+
+
+
 
 # From the academic theme
 

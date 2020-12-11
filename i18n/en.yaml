@@ -1,4 +1,4 @@
-### MATRIX CHAT ###
+### MATRIX CHAT WIDGET ###
 
 - id: matrix_title
   translation: Come discuss with our community
@@ -13,6 +13,31 @@
 
 - id: matrix_know_more
   translation: Know more about out platform
+
+### NEWSLETTER WIDGET ###
+
+- id: newsletter_title
+  translation: Monthly Newsletter
+
+- id: newsletter_text
+  translation: |
+    The best way to keep up with our latest activities is to sign up for our 
+    monthly newsletter.
+
+- id: newsletter_email
+  translation: Your email address
+
+- id: newsletter_email_placeholder
+  translation: youareawesome@example.com
+
+- id: newsletter_cta
+  translation: Subscribe
+
+### TEAM SECTION ###
+
+- id: alttext_profile_pic
+  translation: Profile picture of
+
 
 # Translation from the Academic Theme
 
