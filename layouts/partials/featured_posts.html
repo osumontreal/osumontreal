@@ -1,0 +1,68 @@
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-padding-y">
+      {{ $featured_posts := where (where .Site.RegularPages "Type" "blog") ".Params.featured" true | first 3 }}
+      {{ range $featured_posts }}
+      {{ if eq (len $featured_posts) 3 }}
+        <div class="cell small-12 medium-4">
+          <div class="card post-card" style="border: 1px solid #555">
+            <a href="{{ .RelPermalink }}">
+            {{ $image := (.Resources.ByType "image").GetMatch "featured*" }}
+            {{ with $image }}
+            {{/*  original ratio given by Danny, but weird behavior when resizing ~500-600 pixel wide  */}}
+            {{/*  {{ $resized_image := $image.Fill "370x235" }}  */}}
+            {{ $resized_image := $image.Fill "614x390" }}
+            <img src="{{ $resized_image.RelPermalink }}"
+                 alt="{{ .Params.img_alttext }}"
+                 width="100%"
+                 height="235">
+            </a>
+            {{ end }}
+            <div class="card-section">
+              <p style="font-size: .75rem; font-weight: lighter">
+                {{ dateFormat "2006/01/02" .Date }}
+                | 
+                {{ .ReadingTime }} {{ T "minute_read"}}
+              </p>
+              <h2 class="h4">
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h2>
+              {{/*  TODO: add summary before tags (same to be shared on social media)  */}}
+              {{ partial "tags" . }}
+            </div>
+          </div>
+        </div>
+{{/*  If only 2 or 1 featured posts  */}}
+      {{ else }}
+              <div class="cell small-12 medium-6">
+          <div class="card post-card" style="border: 1px solid #555">
+            <a href="{{ .RelPermalink }}">
+            {{ $image := (.Resources.ByType "image").GetMatch "featured*" }}
+            {{ with $image }}
+            {{ $resized_image := $image.Fill "614x390" }}
+            <img src="{{ $resized_image.RelPermalink }}"
+                 alt="{{ .Params.img_alttext }}"
+                 width="614"
+                 height="390">
+            </a>
+            {{ end }}
+            <div class="card-section">
+              <p style="font-size: .75rem; font-weight: lighter">
+                {{ dateFormat "2006/01/02" .Date }}
+                | 
+                {{ .ReadingTime }} {{ T "minute_read"}}
+              </p>
+              <h2 class="h4">
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h2>
+              {{ partial "tags" . }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>

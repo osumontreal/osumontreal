@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-8 medium-offset-2"
+           style="border-bottom: solid 2px #eee; margin-bottom: 20px;">
+         <h1 class="text-center">{{ .Title }}</h1>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-8 medium-offset-2">
+        <h2>Bio</h2>
+        {{ .Content }}
+        {{ with .Params.twitter }}
+          <p>
+            <a href="https://twitter.com/{{ substr . 1 }}">
+              Follow {{ $.Params.name }} on Twitter
+            </a>
+          </p>
+        {{ end }}
+        
+        <h2>Articles</h2>
+        <ul>
+        {{ range .Data.Pages }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+{{ end }}

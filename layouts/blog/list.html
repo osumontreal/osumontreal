@@ -3,49 +3,91 @@
     <div class="grid-x grid-margin-x">
       <div class="cell auto"
            style="border-bottom: solid 2px #eee; margin-bottom: 20px;">
-        <h1 class="h3">Blogue</h1>
+        <h1 class="h3">{{ .Title }}</h1>
         <!-- Display only if there's a subtitle text -->
-        <p>Lorem ipsum dolor sit amet</p>
+        {{ with .Content }}<p>{{ . }}</p>{{ end }}
       </div>
     </div>
     <div class="grid-x grid-margin-x">
+      {{/*  TODO: Ask Danny if first 2 are supposed to be featured post? If not, optimize the 2 ranges into one (with scratch count)  */}}
       {{ range first 2 (where .Site.RegularPages "Type" "blog") }}
         <div class="cell small-12 medium-6">
           <div class="card post-card">
-            <img src="assets/img/generic/rectangle-1.jpg"
-                 alt=""
+            {{/*  TODO: make sure to indicate photos must be x by y minimum  */}}
+            {{ $image := (.Resources.ByType "image").GetMatch "featured*" }}
+            {{ with $image }}
+            {{ $resized_image := $image.Fill "780x496" }}
+            <img src="{{ $resized_image.RelPermalink }}"
+                 alt="{{ .Params.img_alttext }}"
                  width="780"
                  height="350">
-            <div class="card-section">
+            </a>
+            {{ end }}
+                  <div class="card-section">
               <h4>
                 <a href="{{ .RelPermalink }}">
                   {{ .Title }}
                 </a>
               </h4>
-              <p style="color: #555">Published on [date] by [auteur]</p>
+              <p style="color: #555"> 
+                {{ $date := .Lastmod.Format "site.Params.date_format" }}
+                {{ T "published_on" }}
+                {{ $datepub := .Date.Format "January 2, 2006" }}
+                {{ if eq .Lang "fr" }}
+                {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                {{ else }}
+                {{ $datepub }} 
+                {{ end }}
+                {{ T "by" }}
+                {{ delimit .Params.authors "," " & " }}</p>
+            <p class="text-center">{{ .ReadingTime }} {{ T "minute_read" }}</p>
+            {{/*  TODO: Fix summaryLength from config.yaml  */}}
+            <p class="">{{ .Summary | first 140 }} ... </p>
+            {{ partial "tags" . }}
             </div>
           </div>
         </div>
       {{ end }}
+
       {{ range after 2 (where .Site.RegularPages "Type" "blog") }}
         <div class="cell small-12 medium-4">
           <div class="card post-card">
-            <img src="assets/img/generic/rectangle-1.jpg"
-                 alt=""
-                 width="390"
-                 height="250">
-            <div class="card-section">
+            {{/*  TODO: make sure to indicate photos must be x by y minimum  */}}
+            {{ $image := (.Resources.ByType "image").GetMatch "featured*" }}
+            {{ with $image }}
+            {{ $resized_image := $image.Fill "614x390" }}
+            <img src="{{ $resized_image.RelPermalink }}"
+                 alt="{{ .Params.img_alttext }}"
+                 width="739080"
+                 height="350">
+            </a>
+            {{ end }}
+                  <div class="card-section">
               <h4>
                 <a href="{{ .RelPermalink }}">
                   {{ .Title }}
                 </a>
               </h4>
-              <p style="color: #555">Published on [date] by [auteur]</p>
+              <p style="color: #555"> 
+                {{ $date := .Lastmod.Format "site.Params.date_format" }}
+                {{ T "published_on" }}
+                {{ $datepub := .Date.Format "January 2, 2006" }}
+                {{ if eq .Lang "fr" }}
+                {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                {{ else }}
+                {{ $datepub }} 
+                {{ end }}
+                {{ T "by" }}
+                {{ delimit .Params.authors "," " & " }}</p>
+            <p class="text-center">{{ .ReadingTime }} {{ T "minute_read" }}</p>
+            {{/*  TODO: Fix summaryLength from config.yaml  */}}
+            <p class="">{{ .Summary | first 140 }} ... </p>
+            {{ partial "tags" . }}
             </div>
           </div>
         </div>
-      {{ end }}
-    </div>
-  </div>
-  {{ partial "widgets/newsletter.html" . }}
+          {{ end }}
+        </div>
+      </div>
+      {{ partial "widgets/newsletter.html" . }}
 {{ end }}

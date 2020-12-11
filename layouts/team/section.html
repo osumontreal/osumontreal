@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell auto text-center">
+      <h1 class="h3">{{ .Title }}</h1>
+      <p class="">{{ .Content }}</p>
+    </div>
+  </div>
+</div>
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <!-- range -->
+    {{ $query := where (where site.Pages "Section" "authors") ".Params.display" true }}
+    {{ range $query }}
+    <div class="cell small-12 medium-4">
+      <div class="card text-center">
+        <div class="card-section">
+          {{ $picture := (.Resources.ByType "image").GetMatch "**" }}
+          {{ if or (in $picture ".png") (in $picture ".jpg") }}
+          {{ $picture = $picture.Fill "250x250 Center" }}
+          {{ end }}
+          <img src="{{ $picture.RelPermalink }}" style="{{ with in $picture ".svg"}}filter: hue-rotate(
+              {{- index (seq 360 | shuffle) 0 -}}deg)  saturate({{- index (seq 50 100 | shuffle) 0 -}}%)
+              {{- end -}};"
+              alt="{{ T "alttext_profile_pic" }} {{ .Title }}"
+              width="250px"
+              height="250px
+              ">
+            </div>
+            <div class="card-section">
+              <a href="{{ .RelPermalink }}" class=""><h2 class="h4">{{ .Name }}</h2></a>
+              <p>{{ .Params.role }}</p>
+              <ul class="menu align-center">
+                {{ range .Params.social }}
+                {{ with .personal }}<li><a href="{{.}}">Personal Website</a></li>{{end}}
+                {{ with .github }}<li><a href="{{.}}">GitHub</a></li>{{end}}
+                {{ with .orcid }}<li><a href="{{.}}">ORCID</a></li>{{end}}
+                {{ with .osf }}<li><a href="{{.}}">OSF</a></li>{{end}}
+                {{ with .twitter }}<li><a href="{{.}}">Twitter</a></li>{{end}}
+                {{ with .google_scholar }}<li><a href="{{.}}">Scholar</a></li>{{end}}
+                {{ end }}
+              </ul>
+        </div>
+      </div>
+    </div>
+    {{end}}
+    <!-- end -->
+  </div>
+</div>
+
+{{ partial "widgets/matrix.html" . }}
+{{ end }}

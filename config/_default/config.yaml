@@ -8,19 +8,48 @@ languages:
   en:
     contentDir: "content/en"
     languageName: "English"
+    summaryLength: 4
     permalinks:
       blog: "/blog/:year/:month/:day/:slug"
+      authors: "/team/:slug"
   fr:
     contentDir: "content/fr"
     languageName: "Français"
+    summaryLength: "10"
     permalinks:
       blog: "/blogue/:year/:month/:day/:slug"
+      authors: "/equipe/:slug"
+
+permalinks:
+  tags: "/tag/:slug/"
+  categories: "/category/:slug/"
 
 menu:
   social:
     - name: "Facebook"
       url:  "#"
     - name: "Twitter"
-      url:  "#"
+      url:  "https://twiter.com/OSUMontreal"
     - name: "Mastodon"
       url:  "#"
+
+social:
+  facebook: "OSUMontreal"
+  instagram: "OSUMontreal"
+  twitter: "OSUMontreal"
+
+imaging:
+  resampleFilter: box
+  quality: 100 # default is 75
+  anchor: smart # default setting
+  bgColor: '#ffffff' # default bg color for JPGs
+
+enableGitInfo: true
+
+# Taxonomies.
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  author: "authors"
+
+
