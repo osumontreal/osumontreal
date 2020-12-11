@@ -7,13 +7,17 @@
         <li class="orbit-slide">
           <div class="orbit-figure">
             <div class="grid-x text-center">
-              <div class="cell small-12 medium-5"
+              <div class="cell small-12 medium-5 slide-text"
                    style="padding: 15px; background-color: {{ .color }}; color: white;">
                 <h2 class="h4" style="padding: 15px;">{{ .title }}</h2>
+
                 <p style="padding: 0 15px;">
                 {{ .text }}
                 </p>
-                <a class="hollow button white" href="{{ .cta_link }}" style="text-decoration: none;"> {{ .cta }}</a>
+                <a class="hollow button white"
+                   href="{{ .cta_link }}"
+                   style="text-decoration: none;">{{ .cta }}</a>
+
                 <button class="orbit-previous">&#9664;&#xFE0E;</button>
                 <button class="orbit-next">&#9654;&#xFE0E;</button>
               </div>
