@@ -1,0 +1,30 @@
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-padding-y">
+      {{ range first 4 (where (where .Site.RegularPages "Type" "blog") ".Params.featured" "!=" true) }}
+        <div class="cell small-12 medium-3">
+          <div class="card post-card">
+            <a href="{{ .RelPermalink }}">
+            {{ $image := (.Resources.ByType "image").GetMatch "featured*" }}
+            {{ $img_anchor := .Params.img_anchor | default "Smart" }}
+            {{ with $image }}
+            {{/*  TODO: find proper Fill ratio...  */}}
+            {{ $resized_image := $image.Fill (printf "270x175 %s" $img_anchor) }}
+            <img src="{{ $resized_image.RelPermalink }}"
+              alt="{{ .Params.img_alttext }}"
+              width="100%"
+              height="175">
+            </a>
+            {{end}}
+            <div class="card-section">
+              <h2 class="h4">
+                <a href="{{ .RelPermalink }}">
+                  {{ .Title }}
+                </a>
+              </h2>
+              {{ partial "tags" . }} 
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
