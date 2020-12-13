@@ -8,11 +8,14 @@
           <div class="orbit-figure">
             <div class="grid-x text-center">
               <div class="cell small-12 medium-5 slide-text"
-                   style="padding: 15px; background-color: {{ .color }}; color: white;">
+                   style="padding: 15px;
+                          background-color: #006ab5;
+                          color: white;
+                          max-height: 309px;">
                 <h2 class="h4" style="padding: 15px;">{{ .title }}</h2>
 
                 <p style="padding: 0 15px;">
-                {{ .text }}
+                {{ .text | truncate 140 }}
                 </p>
                 <a class="hollow button white"
                    href="{{ .cta_link }}"

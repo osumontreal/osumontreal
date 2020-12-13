@@ -8,7 +8,6 @@ slider:
   text: blablabla
   cta: Read ittt
   cta_link: blog/
-  color: "#006ab5"
   img: welcome.jpg
   img_alttext: This is some alt text
 
@@ -18,6 +17,5 @@ slider:
   cta: Read ittt
   img: anothaone.jpg
   img_alttext: This is some alt text
-  color: "#000"
 
 ---
