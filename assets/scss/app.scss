@@ -74,18 +74,7 @@ a {
   text-decoration: underline;
 }
 
-// Card links
-.post-card a {
-  color: black;
-  text-decoration: none;
-}
-.post-card:hover {
-  a {
-    color: black;
-    text-decoration: underline;
-  }
-}
-
+// top bar
 .top-bar {
   a {
     color: black;
@@ -94,6 +83,34 @@ a {
     &:hover {
       color: #006bb6;
     }
+  }
+}
+
+// Card links
+.post-card a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.tag-list {
+  margin: 0;
+}
+
+li.tag-list {
+list-style-type: none;
+display: inline;
+line-height:2rem;
+border-right: solid 1px #2a2a2e;
+padding-left: 5px;
+
+  & a {
+    color: #2a2a2e;
+  }
+  &:first-child {
+    padding: 0;
+  }
+  &:last-child {
+    border: none;
   }
 }
 
@@ -122,15 +139,3 @@ a {
 
 }
 
-ul.tag-list {
-  margin: 0
-}
-
-li.tag-list {
-list-style-type: none;
-display: inline;
-border: 1px solid #555;
-padding: .25rem;
-line-height:2rem;
-margin: .25rem
-}
