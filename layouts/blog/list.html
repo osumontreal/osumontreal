@@ -29,20 +29,17 @@
                   {{ .Title }}
                 </a>
               </h4>
-              <p style="color: #555"> 
+              <p style="color: #555">
                 {{ $date := .Lastmod.Format "site.Params.date_format" }}
                 {{ T "published_on" }}
                 {{ $datepub := .Date.Format "January 2, 2006" }}
                 {{ if eq .Lang "fr" }}
                 {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
                 {{ else }}
-                {{ $datepub }} 
+                {{ $datepub }}
                 {{ end }}
                 {{ T "by" }}
                 {{ delimit .Params.authors "," " & " }}</p>
-            <p class="text-center">{{ .ReadingTime }} {{ T "minute_read" }}</p>
-            {{/*  TODO: Fix summaryLength from config.yaml  */}}
-            <p class="">{{ .Summary | first 140 }} ... </p>
             {{ partial "tags" . }}
             </div>
           </div>
@@ -68,20 +65,17 @@
                   {{ .Title }}
                 </a>
               </h4>
-              <p style="color: #555"> 
+              <p style="color: #555">
                 {{ $date := .Lastmod.Format "site.Params.date_format" }}
                 {{ T "published_on" }}
                 {{ $datepub := .Date.Format "January 2, 2006" }}
                 {{ if eq .Lang "fr" }}
                 {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
                 {{ else }}
-                {{ $datepub }} 
+                {{ $datepub }}
                 {{ end }}
                 {{ T "by" }}
                 {{ delimit .Params.authors "," " & " }}</p>
-            <p class="text-center">{{ .ReadingTime }} {{ T "minute_read" }}</p>
-            {{/*  TODO: Fix summaryLength from config.yaml  */}}
-            <p class="">{{ .Summary | first 140 }} ... </p>
             {{ partial "tags" . }}
             </div>
           </div>
