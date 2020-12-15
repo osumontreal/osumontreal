@@ -3,7 +3,7 @@ name: Hugo deploy
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - v0.1  # Set a branch to deploy
 
 jobs:
   deploy:
