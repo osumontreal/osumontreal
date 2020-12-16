@@ -1,56 +1,58 @@
-<div data-sticky-container style="max-width: 1200px; margin: 0 auto;">
-<div class="top-bar" data-sticky data-options="marginTop:0;">
-  <div class="top-bar-left">
-    <ul class="menu">
-      <li>
-        <a href="{{ "/" | relLangURL }}">
-          <img src="/img/osum.svg" alt="Open Science UMontreal">
-        </a>
-      </li>
-      <li class="hide-for-medium">
-        <button type="button"
-                class="hollow button float-right"
-                data-toggle="offCanvas"
-                style="margin-top: 25px;">
-          Menu
-        </button>
-      </li>
-    </ul>
+<div data-sticky-container>
+  <div style="background-color: #fff;" data-sticky data-options="marginTop:0;">
+    <div class="top-bar" style="max-width: 1200px; margin: 0 auto;">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li>
+            <a href="{{ "/" | relLangURL }}">
+              <img src="/img/osum.svg" alt="Open Science UMontreal">
+            </a>
+          </li>
+          <li class="hide-for-medium">
+            <button type="button"
+                    class="hollow button float-right"
+                    data-toggle="offCanvas"
+                    style="margin-top: 25px;">
+              Menu
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right show-for-medium">
+        <ul class="dropdown menu" data-dropdown-menu>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main.ByWeight }}
+          <li>
+            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ range .Translations }}
+          <li>
+            <a href="{{ .Permalink }}">{{ upper .Lang }}</a>
+          </li>
+          {{ end }}
+          {{ range .Site.Menus.social }}
+          <li>
+            <a href="{{ .URL }}">
+              <img src="/img/icons/{{ lower .Name }}.svg"
+                   alt=""
+                   width="24"
+                   height="24"
+                   style="margin-top: -8px;">
+              <span class="show-for-sr">
+                {{ .Name }}
+              </span>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="top-bar-right hide-for-medium">
+        <ul class="menu">
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="top-bar-right show-for-medium">
-    <ul class="dropdown menu" data-dropdown-menu>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main.ByWeight }}
-      <li>
-        <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-      {{ range .Translations }}
-      <li>
-        <a href="{{ .Permalink }}">{{ upper .Lang }}</a>
-      </li>
-      {{ end }}
-      {{ range .Site.Menus.social }}
-      <li>
-        <a href="{{ .URL }}">
-          <img src="/img/icons/{{ lower .Name }}.svg"
-               alt=""
-               width="24"
-               height="24"
-               style="margin-top: -8px;">
-          <span class="show-for-sr">
-            {{ .Name }}
-          </span>
-        </a>
-      </li>
-      {{ end }}
-    </ul>
-  </div>
-  <div class="top-bar-right hide-for-medium">
-    <ul class="menu">
-      <li>
-      </li>
-    </ul>
-  </div>
-</div>
 </div>
