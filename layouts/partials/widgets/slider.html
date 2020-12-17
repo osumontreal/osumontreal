@@ -6,9 +6,9 @@
         {{ range .Params.slider }}
         <li class="orbit-slide">
           <div class="orbit-figure">
-            <div class="grid-x text-center">
-              <div class="cell small-12 medium-5 slide-text"
-                   style="padding: 15px;
+            <div class="grid-x text-center align-middle">
+              <div class="cell small-12 medium-6 large-5 slide-text"
+                    style="padding: 15px;
                           background-color: #006ab5;
                           color: white;
                           max-height: 309px;">
@@ -17,9 +17,9 @@
                 <p style="padding: 0 15px;">
                 {{ .text | truncate 140 }}
                 </p>
-                <a class="hollow button white"
-                   href="{{ .cta_link }}"
-                   style="text-decoration: none;">{{ .cta }}</a>
+                  <a class="hollow button white"
+                    href="{{ .cta_link }}"
+                    style="text-decoration: none;">{{ .cta }}</a>
 
                 <button class="orbit-previous">&#9664;&#xFE0E;</button>
                 <button class="orbit-next">&#9654;&#xFE0E;</button>
@@ -28,10 +28,10 @@
               {{ $alttext := .img_alttext }}
               {{ with $image }}
               {{ $resized_image := $image.Fill "685x310" }}
-                <div class="cell small-12 medium-7">
+                <div class="cell small-12 medium-6 large-7">
                   <img class="orbit-image show-for-medium"
                   src="{{ $resized_image.RelPermalink }}"
-                  alt="{{ $alttext }}">
+                  alt="">
                 </div>
                 {{ end }}
             </div>

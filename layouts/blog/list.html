@@ -15,10 +15,11 @@
           <div class="card post-card">
             {{/*  TODO: make sure to indicate photos must be x by y minimum  */}}
             {{ $image := (.Resources.ByType "image").GetMatch "featured*" }}
+            {{ $img_anchor := .Params.img_anchor | default "Smart" }}
             {{ with $image }}
-            {{ $resized_image := $image.Fill "780x496" }}
+            {{ $resized_image := $image.Fill (printf "780x496 %s" $img_anchor) }}
             <img src="{{ $resized_image.RelPermalink }}"
-                 alt="{{ .Params.img_alttext }}"
+                 alt=""
                  width="780"
                  height="350">
             </a>

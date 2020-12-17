@@ -10,8 +10,8 @@
             {{/*  TODO: find proper Fill ratio...  */}}
             {{ $resized_image := $image.Fill (printf "270x175 %s" $img_anchor) }}
             <img src="{{ $resized_image.RelPermalink }}"
-              alt="{{ .Params.img_alttext }}"
-              width="100%"
+              alt=""
+              width="270"
               height="175">
             </a>
             {{end}}
