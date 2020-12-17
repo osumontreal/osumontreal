@@ -1,11 +1,7 @@
 ---
-title: "Qui sommes-nous"
+title: "**Open Science UMontréal, c’est quoi ?**"
 slug: "a-propos"
 ---
-
-
-## **Open Science UMontréal, c’est quoi ?**
-
 ### **Vision** 
 
 * Nous croyons en un monde dans lequel tous les membres de la société ont accès librement aux processus création, aux contenus et retombées de la recherche scientifique.

@@ -1,7 +1,6 @@
 ---
-title: "About"
+title: "**What is Open Science UMontreal?**"
 ---
-## **What is Open Science UMontreal?**
 
 ### Vision
 

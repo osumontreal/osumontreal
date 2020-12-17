@@ -1,7 +1,7 @@
 title: Open Science UMontreal
 baseURL: https://osumontreal.github.io/
 relativeURLs: true
-
+removePathAccents: true
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 languages:
