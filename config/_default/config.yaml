@@ -24,15 +24,6 @@ permalinks:
   tags: "/tag/:slug/"
   categories: "/category/:slug/"
 
-menu:
-  social:
-    - name: "Facebook"
-      url:  "#"
-    - name: "Twitter"
-      url:  "https://twiter.com/OSUMontreal"
-    - name: "Mastodon"
-      url:  "#"
-
 social:
   facebook: "OSUMontreal"
   instagram: "OSUMontreal"

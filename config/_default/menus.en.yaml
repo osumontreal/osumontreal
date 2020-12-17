@@ -12,12 +12,12 @@ main:
     url:  "/blog"
     weight: 20
 social:
-  - name: "Facebook"
-    url:  "#facebook"
+  # - name: "Facebook"
+  #   url:  "#facebook"
   - name: "Twitter"
-    url:  "#twitter"
+    url:  "https://twitter.com/OSUMontreal"
   - name: "Mastodon"
-    url:  "#mastodon"
+    url:  "https://fosstodon.org/web/accounts/286300"
 footer:
   - name: "Colophon"
     url:  "#"
