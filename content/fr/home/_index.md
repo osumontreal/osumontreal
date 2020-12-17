@@ -7,7 +7,7 @@ slider:
 - title: Open Science UMontréal
   text: Welcome to our version 0.1 of our website.
   cta: Find out who we are
-  cta_link: about/
+  cta_link: a-propos/
   img: welcome.jpg
   img_alttext:
 
