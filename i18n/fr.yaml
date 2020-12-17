@@ -39,7 +39,13 @@
 - id: alttext_profile_pic
   translation: Photo de profil de
 
+### FOOTER ###
 
+- id: licence
+  translation: |
+    Sauf indication contraire, le code source de ce site web est sous licence
+    [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.txt) et le contenu est sous
+    licence [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 
 # From the academic theme
