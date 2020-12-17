@@ -6,6 +6,13 @@ slug: "a-propos"
 
 ## **Open Science UMontréal, c’est quoi ?**
 
+### **Vision** 
+
+* Nous croyons en un monde dans lequel tous les membres de la société ont accès librement aux processus création, aux contenus et retombées de la recherche scientifique.
+
+* Nous espérons développer une communauté d’individus œuvrant afin d’atteindre ce but, défendant les principes de la science ouverte tels que l'inclusivité, la collaboration et la transparence.
+
+* Nous croyons fermement que la science ouverte nous permettra à long terme de résoudre efficacement les problèmes auxquels la science est confrontée actuellement.
 
 ###  **Mission**
 
@@ -13,10 +20,10 @@ Open Science UMontréal a pour mission de promouvoir une science au service du b
 
 **1- Sensibilisation**
 
-L'objectif d’'OSUM est de sensibiliser la communauté aux avantages de l'utilisation de pratiques ouvertes et reproductibles, qui rendent la science plus accessible, transparente et reproductible à long terme.
+L'objectif d’'OSUM est de sensibiliser la communauté aux avantages de l'utilisation de pratiques ouvertes et reproductibles, qui rendent la science plus accessible, transparente et crédible.
 
 *   Sensibiliser la communauté académique
-*   Sensibiliser les décideurs politiques, par le biais d'ateliers, de conférences, de blogues et bien d’autres, dans l’optique de provoquer efficacement l'adoption à grande échelle des pratiques de science ouverte à l’UdeM
+*   Sensibiliser les décideurs et les décideuses politiques, par le biais d'ateliers, de conférences, de blogues et bien d’autres, dans l’optique de provoquer efficacement l'adoption à grande échelle des pratiques de science ouverte à l’UdeM
 
 **2- Mise à disposition de ressources**
 
@@ -36,20 +43,18 @@ Nous voulons établir une communauté inclusive et collaborative travaillant à 
 
 *   Offrir des occasions de se rencontrer et encourager l'échange d'idées dans et entre les domaines, car nous pouvons tous apprendre les uns des autres
 
-## Vision 
-
-Nous croyons en un monde où tous les membres de la société ont accès librement aux processus création, aux contenus et retombées de la recherche scientifique.
-
-Nous espérons développer une communauté d’individus œuvrant afin d’atteindre ce but, défendant les principes de la science ouverte tels que l'inclusivité, la collaboration et la transparence.
-
-Nous croyons fermement que la science ouverte nous permettra à long terme de résoudre efficacement les problèmes auxquels la science est confrontée actuellement.
 
 --------------------------------------------
 
-Toute personne intéressée, qu'elle soit affiliée ou non à l'UdeM, peut participer aux activités et joindre notre initiative. Les intérêts et les besoins des membres de la communauté udemienne orientent les grandes directions qu'entreprend l'initiative et les types d'activités organisées, mais nous sommes également ouvert.e.s. aux suggestions
+
+
+{{< callout primary >}}
+Toute personne intéressée, qu'elle soit affiliée ou non à l'UdeM, peut participer aux activités et joindre notre initiative. 
 
 **Pour nous joindre**
 
 Pour toute question, pour joindre un membre de notre équipe ou pour vous impliquez au sein d’Open Science Umontréal :
 
 Contactez-nous via courriel  [info@openscience.ca](mailto:info@openscience.ca) ! Il nous fera plaisir de vous répondre :)
+
+{{< /callout >}}
