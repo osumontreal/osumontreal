@@ -6,17 +6,33 @@
     <div class="cell small-12 medium-4">
       <h2 class="h4">{{ T "newsletter_title" }}</h2>
       <p>{{ T "newsletter_text" }}</p>
-      <form action="#">
-        <label>
-          <span style="font-weight: 600">
-            {{ T "newsletter_email" }}
-          </span>
-          <input type="text" placeholder="{{ T "newsletter_email_placeholder" }}">
-        </label>
-        <input type="submit"
-               value="{{ T "newsletter_cta" }}"
-               class="button charcoal expanded">
+      <form action="https://tinyletter.com/openscience"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://tinyletter.com/openscience',
+                                  'popupwindow',
+                                  'scrollbars=yes,width=800,height=600');return true">
+        <p>
+          <label style="font-weight: 600;"
+                  for="tlemail">{{ T "newsletter_email" }}
+          </label>
+        </p>
+        <p>
+          <input type="text"
+                name="email"
+                placeholder="{{ T "newsletter_email_placeholder" }}"
+                id="tlemail" />
+        </p>
+        <input type="hidden" value="1" name="embed"/>
+        <input class="button charcoal expanded"
+              type="submit"
+              value="{{ T "newsletter_cta" }}" />
+        <p class="text-center" style="font-size: 0.75em">
+          <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
+        </p>
       </form>
     </div>
   </div>
 </div>
+
+
