@@ -1,12 +1,13 @@
 ---
+draft: true
 title: Pourquoi je cherchais la science ouverte, sans même le savoir
-featured: true
+featured: false
 authors: ["Samuel Burke"]
 date: 2020-12-10
 
 tags: ["Science ouverte", "Histoire personnelle", "Inspiration"]
 # Anchor points for cropping: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-img_anchor: Center
+img_anchor: BottomRight
 description: | 
     ... This is a broad question I have. Whether, in fact, the current 'status
      quo' is actually an optimal system: not too restrictive yet not too rigorous / organized...

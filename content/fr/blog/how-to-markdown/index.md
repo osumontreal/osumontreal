@@ -3,7 +3,7 @@ draft: true
 title: "How to Markdown"
 date: 2020-12-10T10:06:59-05:00
 authors: []
-tags: ["erase me", "erase me 2"]
+tags: ["Tips", "OSUMideas"]
 categories: []
 featured: false
 # Anchor points for cropping: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.

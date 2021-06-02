@@ -1,5 +1,6 @@
 ---
 # Display name
+draft: true
 title: "Anthony Levasseur"
 name: "Anthony Levasseur"
 # Username (should match directory name and blog posts metadata)
