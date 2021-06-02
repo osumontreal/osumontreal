@@ -5,9 +5,9 @@ main:
   - name: "About"
     url: "/about"
     weight: 40
-  - name: "Team"
-    url:  "/team"
-    weight: 30
+  # - name: "Team"
+  #   url:  "/team"
+  #   weight: 30
   - name: "Blog"
     url:  "/blog"
     weight: 20

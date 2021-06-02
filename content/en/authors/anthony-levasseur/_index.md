@@ -6,7 +6,7 @@ name: "Anthony Levasseur"
 authors: "Anthony Levasseur"
 
 # True to be listed in /team/ page (default is true)
-display: true
+display: false
 
 # Role/position in the initiative
 role: Contributor
